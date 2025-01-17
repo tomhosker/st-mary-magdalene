@@ -1,0 +1,53 @@
+extends layout
+
+block content
+    sidebox.liturgical-border
+        h2 Parish Priest
+        p #[b #{parishPriest.full_name}]
+            br
+            | #[i Presbytery] &nbsp; #{parishPriest.landline}
+            br
+            | #[i Mobile] &nbsp; #{parishPriest.mobile}
+            br
+            | #[i Email] &nbsp; #{parishPriest.email}
+            br
+            | #[i Post] &nbsp; #{parishPriest.address_name}
+
+        h2 Locations
+        for location in locations
+            p #[b #{location.house_name}]
+                br
+                | #{location.firstLine}
+                br
+                | #{location.town}
+                br
+                | #{location.post_town}
+                br
+                | #{location.postcode}
+                br
+
+    h1 Service Times
+
+    table.homepage
+        tr
+            th Service
+            th Time
+            th Location
+        for service in serviceTimes
+            tr
+                td=service.service_type
+                td=service.time
+                td=service.location_name
+
+    div.index-main-container
+        img.index-main(src="/images/tintoretto_cropped.jpg")
+
+    if isAdmin
+        h2 Hidden Area
+        ul
+            li #[a(href="/admin") Admin area]
+
+    h2 Welcome
+    p On behalf of the parish of #[b St Mary Magdalene Maltby], welcome! We are a community, based in the #[b Maltby] in Rotherham, who gather regularly to worship, to receive the sacraments, to announce the gospel, and to support each other in following #[b Jesus Christ]. Our church services are #[b open to all], and we strive to create communities where all will feel welcome.
+
+    script(type="text/javascript", src="/frontend_scripts/slideshow.js")
