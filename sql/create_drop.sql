@@ -50,7 +50,7 @@ CREATE TABLE ServiceTime (
     service_type VARCHAR(99) NOT NULL DEFAULT 'Mass',
     has_childrens_liturgy BOOLEAN NOT NULL DEFAULT false,
     childrens_liturgy_remarks VARCHAR(999),
-    remarks VARCHAR(99),
+    remarks VARCHAR(999),
     CONSTRAINT fk_location FOREIGN KEY(location) REFERENCES
         RealWorldAddress(code)
 );
