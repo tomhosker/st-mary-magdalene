@@ -137,45 +137,6 @@ div.liturgical-border {
     padding-bottom: 20px;
 }
 
-.index-main {
-    width: 100%
-}
-
-/* Slideshow stuff. */
-.slideshows-container {
-    overflow: hidden;
-}
-.slideshow-container {
-    width: 40%;
-    height: 100%;
-    float: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-}
-.slideshow {
-    /* width: 100%; */
-}
-.mySlides {
-    display: none;
-}
-.mySlidesBatch2 {
-    display: none;
-}
-.fade {
-    width: 100%;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-@keyframes fade {
-    from {
-        opacity: 0.4;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 helpbox {
     float: right;
     width: 25%;
@@ -191,9 +152,14 @@ img {
     vertical-align: middle;
 }
 
-img.pilgrimage {
+pilgrimage {
     width: 100%;
 }
+
+.index-main {
+    width: 100%
+}
+
 
 sidebox {
     float: right;
