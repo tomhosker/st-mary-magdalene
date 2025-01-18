@@ -1,5 +1,5 @@
 -- Run me using:
---   heroku pg:psql --app [APP_CODE] < [PATH_TO_SCRIPT].sql
+--   heroku pg:psql --app [APP_CODE] < [PATH_TO_THIS_FILE]
 
 DROP TABLE IF EXISTS ChildrensLiturgy;
 DROP TABLE IF EXISTS Pilgrimage;
