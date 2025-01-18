@@ -16,6 +16,8 @@ INSERT INTO UserLoginDetails (
 INSERT INTO RealWorldAddress (
     code,
     short_name,
+    is_parish_church,
+    is_linked_church,
     house_name,
     house_number,
     road_name,
@@ -24,6 +26,8 @@ INSERT INTO RealWorldAddress (
     postcode
 ) VALUES (
     'st-mary-magdalene',
+    true,
+    false,
     'St Mary Magdalene',
     'St Mary Magdalene Roman Catholic Church',
     null,
@@ -33,6 +37,8 @@ INSERT INTO RealWorldAddress (
     'S66 7LH'
 ), (
     'st-marys-edlington',
+    false,
+    true,
     'St Mary''s Edlington',
     'St Mary''s Catholic Church',
     null,
@@ -42,6 +48,8 @@ INSERT INTO RealWorldAddress (
     'DN12 1DL'
 ), (
     'sacred-heart-balby',
+    false,
+    true,
     'Sacred Heart Balby',
     'Sacred Heart Catholic Church',
     44,

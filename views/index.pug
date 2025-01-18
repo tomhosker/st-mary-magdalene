@@ -14,16 +14,28 @@ block content
             | #[i Post] &nbsp; #{parishPriest.address_name}
 
         h2 Location
-        for location in locations
-            p #[b #{location.house_name}]
+        for parishChurch in parishChurches
+            p #[b #{parishChurch.house_name}]
                 br
-                | #{location.firstLine}
+                | #{parishChurch.firstLine}
                 br
-                | #{location.town}
+                | #{parishChurch.town}
                 br
-                | #{location.post_town}
+                | #{parishChurch.post_town}
                 br
-                | #{location.postcode}
+                | #{parishChurch.postcode}
+                br
+        h3 Linked Churches
+        for linkedChurch in linkedChurches
+            p #[b #{linkedChurch.house_name}]
+                br
+                | #{linkedChurch.firstLine}
+                br
+                | #{linkedChurch.town}
+                br
+                | #{linkedChurch.post_town}
+                br
+                | #{linkedChurch.postcode}
                 br
 
     h1 Service Times

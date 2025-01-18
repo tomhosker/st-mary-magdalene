@@ -18,6 +18,8 @@ CREATE TABLE UserLoginDetails (
 
 CREATE TABLE RealWorldAddress (
     code VARCHAR(99) PRIMARY KEY,
+    is_parish_church BOOLEAN NOT NULL DEFAULT false,
+    is_linked_church BOOLEAN NOT NULL DEFAULT false,
     short_name VARCHAR(99) NOT NULL,
     house_name VARCHAR(99),
     house_number INT,
