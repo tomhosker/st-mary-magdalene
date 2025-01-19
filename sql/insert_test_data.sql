@@ -10,7 +10,7 @@ INSERT INTO UserLoginDetails (
 ) VALUES (
     1,
     'admin',
-    '84983c60f7daadc1cb8698621f802c0d9f9a3c3c295c810748fb048115c186ec' -- Hash of "guest".
+    '84983c60f7daadc1cb8698621f802c0d9f9a3c3c295c810748fb048115c186ec'  -- Hash of "guest".
 );
 
 INSERT INTO RealWorldAddress (
@@ -26,9 +26,9 @@ INSERT INTO RealWorldAddress (
     postcode
 ) VALUES (
     'st-mary-magdalene',
+    'St Mary Magdalene',
     true,
     false,
-    'St Mary Magdalene',
     'St Mary Magdalene Roman Catholic Church',
     null,
     'Morrell Street',
@@ -37,9 +37,9 @@ INSERT INTO RealWorldAddress (
     'S66 7LH'
 ), (
     'st-marys-edlington',
+    'St Mary''s Edlington',
     false,
     true,
-    'St Mary''s Edlington',
     'St Mary''s Catholic Church',
     null,
     'Bungalow Road',
@@ -48,9 +48,9 @@ INSERT INTO RealWorldAddress (
     'DN12 1DL'
 ), (
     'sacred-heart-balby',
+    'Sacred Heart Balby',
     false,
     true,
-    'Sacred Heart Balby',
     'Sacred Heart Catholic Church',
     44,
     'Warmsworth Road',

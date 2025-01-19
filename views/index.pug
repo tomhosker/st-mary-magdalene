@@ -25,18 +25,19 @@ block content
                 br
                 | #{parishChurch.postcode}
                 br
-        h3 Linked Churches
-        for linkedChurch in linkedChurches
-            p #[b #{linkedChurch.house_name}]
-                br
-                | #{linkedChurch.firstLine}
-                br
-                | #{linkedChurch.town}
-                br
-                | #{linkedChurch.post_town}
-                br
-                | #{linkedChurch.postcode}
-                br
+        if linkedChurches.length > 0
+            h3 Linked Churches
+            for linkedChurch in linkedChurches
+                p #[b #{linkedChurch.house_name}]
+                    br
+                    | #{linkedChurch.firstLine}
+                    br
+                    | #{linkedChurch.town}
+                    br
+                    | #{linkedChurch.post_town}
+                    br
+                    | #{linkedChurch.postcode}
+                    br
 
     h1 Service Times
 
