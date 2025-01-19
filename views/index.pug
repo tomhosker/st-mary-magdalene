@@ -3,15 +3,33 @@ extends layout
 block content
     sidebox.liturgical-border
         h2 Parish Priest
-        p #[b #{parishPriest.full_name}]
-            br
-            | #[i Presbytery] &nbsp; #{parishPriest.landline}
-            br
-            | #[i Mobile] &nbsp; #{parishPriest.mobile}
-            br
-            | #[i Email] &nbsp; #{parishPriest.email}
-            br
-            | #[i Post] &nbsp; #{parishPriest.address_name}
+        if parishPriest
+            p #[b #{parishPriest.full_name}]
+                br
+                | #[i Presbytery] &nbsp; #{parishPriest.landline}
+                br
+                | #[i Mobile] &nbsp; #{parishPriest.mobile}
+                br
+                | #[i Email] &nbsp; #{parishPriest.email}
+                br
+                | #[i Post] &nbsp; #{parishPriest.address_name}
+        else
+            p #[i None at present]
+        if deacon
+            h3 Deacon
+            p #[b #{deacon.full_name}]
+                if deacon.landline
+                    br
+                    | #[i Landline] &nbsp; #{deacon.landline}
+                if deacon.mobile
+                    br
+                    | #[i Mobile] &nbsp; #{deacon.mobile}
+                if deacon.email
+                    br
+                    | #[i Email] &nbsp; #{deacon.email}
+                if deacon.address_name
+                    br
+                    | #[i Post] &nbsp; #{deacon.address_name}
 
         h2 Location
         for parishChurch in parishChurches
