@@ -131,8 +131,8 @@ div.liturgical-border {
     background-color: #3e8e41;
 }
 
-.index-main-container {
-    width: 60%;
+.homepage-main-container {
+    width: 65%;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -156,7 +156,7 @@ pilgrimage {
     width: 100%;
 }
 
-.index-main {
+.homepage-main {
     width: 100%
 }
 
