@@ -89,6 +89,23 @@ div.pilgrimage-image-box {
     width: 40%;
 }
 
+div.parish-priests-parent {
+    width: 100%;
+    text-align: center;
+}
+
+div.parish-priests-child {
+    width: 49%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.parish-priests-photo-row {
+    width: 99%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 div.liturgical-border {
     border-top: 5px solid;
     margin-top: 20px;
@@ -137,6 +154,12 @@ div.liturgical-border {
     padding-bottom: 20px;
 }
 
+figure.parish-priest {
+    width: 20%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 helpbox {
     float: right;
     width: 25%;
@@ -150,6 +173,10 @@ helpbox {
 
 img {
     vertical-align: middle;
+}
+
+img.parish-priest {
+    width: 100%;
 }
 
 pilgrimage {
